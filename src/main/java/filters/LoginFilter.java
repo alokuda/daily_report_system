@@ -25,17 +25,15 @@ import constants.ForwardConst;
 public class LoginFilter implements Filter {
 
     /**
-     * Default constructor. 
+     * Default constructor.
      */
     public LoginFilter() {
-
     }
 
     /**
      * @see Filter#destroy()
      */
     public void destroy() {
-
     }
 
     /**
@@ -104,16 +102,15 @@ public class LoginFilter implements Filter {
                 }
             }
 
+            //次のフィルタまたはサーブレットを呼び出し
             chain.doFilter(request, response);
         }
-
     }
 
     /**
      * @see Filter#init(FilterConfig)
      */
     public void init(FilterConfig fConfig) throws ServletException {
-
     }
 
 }
