@@ -7,7 +7,7 @@ package constants;
  */
 public enum AttributeConst {
 
-    //フラッシュメッセージ
+  //フラッシュメッセージ
     FLUSH("flush"),
 
     //一覧画面共通

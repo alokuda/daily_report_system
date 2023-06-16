@@ -7,7 +7,7 @@
 <c:set var="command" value="${ForwardConst.CMD_LOGIN.getValue()}" />
 
 <c:import url="/WEB-INF/views/layout/app.jsp">
-    <c:param name = "content">
+    <c:param name="content">
         <c:if test="${loginError}">
             <div id="flush_error">
                 社員番号かパスワードが間違っています。
@@ -25,7 +25,7 @@
             <br /><br />
 
             <label for="${AttributeConst.EMP_PASS.getValue()}">パスワード</label><br />
-            <input type="passward" name="${AttributeConst.EMP_PASS.getValue()}" id="${AttributeConst.EMP_PASS.getValue()}" />
+            <input type="password" name="${AttributeConst.EMP_PASS.getValue()}" id="${AttributeConst.EMP_PASS.getValue()}" />
             <br /><br />
 
             <input type="hidden" name="${AttributeConst.TOKEN.getValue()}" value="${_token}" />
